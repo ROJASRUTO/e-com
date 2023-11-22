@@ -1,0 +1,47 @@
+@import "../../globals";
+
+.cart-dropdown {
+    display: none;
+    position: absolute;
+    border: 1px solid silver;
+    padding: 16px;
+    cursor: default;
+    border-radius: 2px;
+    right: 30px;
+    top: 55px;
+    height: 350px;
+    z-index: 100;
+    background-color: white;
+    width: 250px;
+    box-shadow: 0px 0px 2px silver;
+    .button-container{
+        
+        .checkoutBtn{
+            width: 220px;
+            position: absolute;
+            bottom: 10px;
+        }
+    }
+
+
+
+    .cart-dropdown-body {
+        height: 280px;
+        overflow-y: auto;
+
+        .cart-dropdown-row{
+            color: $secondary;
+            padding: 8px 0px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-bottom : 1px solid silver;
+
+            img{
+                margin-right: 10px;
+                border-radius: 2px;
+            }
+        }
+        
+    }
+}

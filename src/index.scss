@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import "./globals";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+}
+img {
+  pointer-events: none;
+}
+.disable-selection{
+
+  user-select: none;
+}
+::selection {
+  color: white;
+  background: $danger;
+}
+
+.body-max-width{
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 16px;
+}
+.text-gradient{
+  user-select: none;
+  color: red;
+  background: linear-gradient(to top left, red, blue) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-align-right{
+  
+  float: right;
+  text-align: right;
+}

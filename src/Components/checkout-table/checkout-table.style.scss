@@ -1,0 +1,42 @@
+@import "../../globals";
+
+.checkout-table{
+    margin: 0 auto;   
+
+    border-collapse: collapse;
+    thead{
+        border-bottom: 1px solid black;
+    }
+    td,th{
+        padding: 4px 7px;
+    } 
+
+    img{
+        border-radius: 2px;
+    }
+    .remove{
+        color: red;
+        cursor: pointer;
+        font-size: 22px;
+        &:hover{
+            color: $danger;
+        }
+    }
+
+    .increment, .decrement{
+        color: $primary;
+        cursor: pointer;
+        &:hover{
+            color: $primaryDark;
+        }
+    }
+}
+.null-cart{
+    padding: 16px;
+    text-align: center;
+}
+.total{
+    font-weight: bold;
+    text-align: right;
+    font-size: 22px;
+}
